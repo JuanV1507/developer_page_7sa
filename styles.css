@@ -123,3 +123,38 @@ body{
     width: auto;
 }
 }
+@media(min-width: 768px) {
+    .servicios{
+        display: grid;
+        /* DEFINE EL AREA DE LAS COLUMNAS*/
+
+       /* grid-template-columns:1fr 1fr 1fr ;*/
+
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+.servicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.servicio h3{
+
+    color: var(--secundario);
+    font-weight: normal;
+}
+.servicio p{
+    line-height: 2;
+    text-align: center;
+}
+.servicio .iconos {
+    height: 15rem;
+    width: 15rem;
+    background-color: var(--primario);
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
